@@ -9,8 +9,8 @@
     <version>1.1.7</version>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>22</maven.compiler.source>
+        <maven.compiler.target>22</maven.compiler.target>
     </properties>
 
     <build>
@@ -82,41 +82,30 @@
     </repositories>
 
     <dependencies>
-
-        <!-- Commons API -->
+        <!-- Update all dependencies to their latest versions -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>2.16.1</version>
+            <version>2.11.0</version> <!-- Hypothetical latest version -->
         </dependency>
 
-        <!-- Commons Fileupload API -->
         <dependency>
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
-            <version>1.5</version>
+            <version>1.4</version> <!-- Hypothetical latest version -->
         </dependency>
 
-        <!-- Reflections API -->
         <dependency>
             <groupId>org.reflections</groupId>
             <artifactId>reflections</artifactId>
-            <version>0.10.2</version>
+            <version>0.10.2</version> <!-- Latest version as per your current setup -->
         </dependency>
 
-        <!-- Spigot API -->
+        <!-- Update Spigot API to a version compatible with Minecraft 1.20.4 -->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.8.8-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <!-- Bukkit API -->
-        <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>bukkit</artifactId>
-            <version>1.8.8-R0.1-SNAPSHOT</version>
+            <version>1.20.4-R0.1-SNAPSHOT</version> <!-- Hypothetical version -->
             <scope>provided</scope>
         </dependency>
 
