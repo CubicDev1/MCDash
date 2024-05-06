@@ -9,8 +9,9 @@
     <version>1.1.7</version>
 
     <properties>
-        <maven.compiler.source>22</maven.compiler.source>
-        <maven.compiler.target>22</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>22</maven.compiler.source>
+    <maven.compiler.target>22</maven.compiler.target>
     </properties>
 
     <build>
@@ -27,6 +28,18 @@
             </resource>
         </resources>
         <plugins>
+                 <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version> <!-- Ensure you are using a recent version -->
+            <configuration>
+                <source>22</source>
+                <target>22</target>
+                <compilerArgs>
+                    <arg>-Xlint:deprecation</arg>
+                </compilerArgs>
+            </configuration>
+        </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -82,6 +95,11 @@
     </repositories>
 
     <dependencies>
+       <dependency>
+          <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+          <version>3.12.0</version> <!-- Check for the latest version -->
+       </dependency>
         <!-- Update all dependencies to their latest versions -->
         <dependency>
             <groupId>commons-io</groupId>
